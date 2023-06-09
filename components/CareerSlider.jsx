@@ -7,6 +7,7 @@ import 'swiper/css/autoplay';
 import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
 import styles from "../styles/slider.module.css";
+import Image from 'next/image';
 
 let data =[
     {
@@ -70,7 +71,7 @@ function CareerSlider() {
                 <SwiperSlide key={item.id}>
                     <div className='rounded-lg m-5  shadow-slate-400 shadow-lg'>
                         <div>
-                        <img src={item.img} width='350' height="200" alt='career' />
+                        <Image src={item.img} width='350' height="200" alt='career' />
                         </div>
                         <div className='py-3 px-5'>
                         <p className='text-xl font-bold leading-6 text-secondary-100'>Finance fundamentals<br/> course</p>

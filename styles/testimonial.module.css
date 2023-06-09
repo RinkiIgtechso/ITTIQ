@@ -1,0 +1,41 @@
+.student_section::before{
+    content:'';
+    background-image: url("/Images/ellipse_2.svg");
+    background-repeat: no-repeat;
+    background-size: 132% 517px;
+    height: 481px;
+    width: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.student_section{
+    height:400px;
+    position: relative;
+}
+
+.student_section::after{
+    content:'';
+    background-image: url("/Images/ellipse_1.svg");
+    background-repeat: no-repeat;
+    background-size: 132% 517px;
+    height: 481px;
+    width: 400px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* .testimonial{
+    padding:0px 200px !important;
+    padding-left:280px;
+} */
+
+.testimonial>.swiper-wrapper{
+    margin-left:-75px !important;
+}
+
+.tst_slider{
+    
+}

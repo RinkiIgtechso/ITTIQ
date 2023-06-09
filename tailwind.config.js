@@ -12,7 +12,11 @@ module.exports = {
         secondary:{
           100: '#292B2C',
           200: '#888883',
-          300:'#F8F8F8'
+          300:'#F8F8F8',
+          400:'#1F242E'
+        },
+        danger:{
+          100:'#fff8f4'
         }
       },
       width:{
@@ -28,6 +32,9 @@ module.exports = {
       },
       backgroundImage:{
         'hero':"url('/Images/logo.svg')"
+      },
+      backgroundSize:{
+        'ellipse1':'400px'
       }
     },
   },

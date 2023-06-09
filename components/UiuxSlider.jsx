@@ -1,45 +1,39 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Autoplay, Keyboard,Navigation } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import 'swiper/css/keyboard';
 import 'swiper/css/navigation';
+import 'swiper/css/keyboard';
 import styles from "../styles/slider.module.css";
+import Image from 'next/image';
 
 let data =[
     {
         id:1,
-        img:'/Images/career_1.svg'
+        img:'/Images/ui_ux.svg'
     },
     {
         id:2,
-        img:'/Images/career_2.svg'
+        img:'/Images/ui_ux.svg'
     },
     {
         id:3,
-        img:'/Images/career_3.svg'
+        img:'/Images/ui_ux.svg'
     },
     {
         id:4,
-        img:'/Images/career_1.svg'
+        img:'/Images/ui_ux.svg'
     },
     {
         id:5,
-        img:'/Images/career_2.svg'
+        img:'/Images/ui_ux.svg'
     }
 ]
 
 function UiuxSlider() {
-
-    useEffect(()=>{
-        let nextB = styles.prev;
-        let prev = document.querySelector('.swiper-button-prev');
-        prev.setAttribute("id",nextB);
-        let next = document.querySelector('.swiper-button-next');
-        next.setAttribute("id",nextB)
-    },[])
+    const swiperRef = useRef();
 
   return (
     <div >
@@ -54,14 +48,29 @@ function UiuxSlider() {
             </div>
         </div>
 
-        <div className='relative -top-32'>
+        <div className='relative -top-44'>
+            <div className='flex justify-between px-3 text-primary relative top-24'>
+                <span onClick={() => swiperRef.current?.slidePrev()}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 review-swiper-button-next cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg></span>
+                <span onClick={() => swiperRef.current?.slideNext()}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 review-swiper-button-next cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg></span>
+                
+            </div>
             <Swiper
-                modules={[Autoplay, Keyboard, Navigation]}
+                modules={[Autoplay, Keyboard]}
                 autoplay={false}
                 keyboard={true}
-                navigation
                 slidesPerView={3}
+                onBeforeInit={(swiper) => {
+                    swiperRef.current = swiper;
+                  }}
                 spaceBetween={20}
+                navigation={{
+                    nextEl: '.review-swiper-button-next',
+                    prevEl: '.review-swiper-button-prev',
+                  }}
                 loop={true}
                 grabCursor={true}
                 centeredSlides={true}
@@ -73,38 +82,37 @@ function UiuxSlider() {
                     <SwiperSlide key={item.id}>
                         <div className='rounded-lg shadow-slate-400 shadow-md'>
                             <div>
-                            <img src={item.img} width='350' height="200" alt='career' />
+                                <Image className='rounded-lg' src={item.img} width='350' height="200" alt='career' />
                             </div>
                             <div className='py-3 px-5'>
-                            <p className='text-lg font-bold leading-6 text-secondary-100'>Finance fundamentals course</p>
-                            <p className='text-gray-400 text-sm font-semibold py-2'>By Kelly Anderson</p>
+                                <p className='text-gray-400 text-sm font-semibold py-2'>UI/UX Design</p>
+                                <p className='text-lg font-bold leading-6 text-secondary-100'>UI/UX Design for Beginners</p>
                             </div>
                             <hr/>
                             <div className='py-3 px-2 flex justify-between'>
-                            <div className='flex gap-1'>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-600">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span className='text-xs text-gray-400'>22hr 30min</span>
-                            </div>
-
-                            <div className='flex gap-1'>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-600">
-                                <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
-                                </svg>
-                                <span className='text-xs text-gray-400'>34 Courses</span>
-                            </div>
-                            <div className='flex gap-1'>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-600">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                                </svg>
-                                <span className='text-xs text-gray-400'>250 Sales</span>
-                            </div>
+                                <div className='flex gap-1'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <span className='text-xs text-gray-400'>22hr 30min</span>
+                                </div>
+                                <div className='flex gap-1'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-600">
+                                    <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+                                    </svg>
+                                    <span className='text-xs text-gray-400'>34 Courses</span>
+                                </div>
+                                <div className='flex gap-1'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                    </svg>
+                                    <span className='text-xs text-gray-400'>250 Sales</span>
+                                </div>
                             </div>
                             <div className='p-2'>
-                            <div className='bg-primary text-sm text-white font-bold w-full rounded-lg p-2 text-center'>
-                                Apply Now
-                            </div>
+                                <div className='bg-primary text-sm text-white font-bold w-full rounded-lg p-2 text-center'>
+                                    Learn More
+                                </div>
                             </div>
                         </div>
                     </SwiperSlide>

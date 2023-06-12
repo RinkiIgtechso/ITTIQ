@@ -10,6 +10,8 @@
     top: 0;
 }
 
+
+
 .student_section{
     height:400px;
     position: relative;
@@ -37,5 +39,16 @@
 }
 
 .tst_slider{
+    transform: none !important;
+}
+
+@media screen and (max-width: 425px){
+    .student_section::before{
+        background-size: 57% 478px;
+        height: 390px;
+        width: 305px;
+        top: 100px;
+    }
+
     
 }

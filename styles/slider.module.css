@@ -3,6 +3,16 @@
     height: 585px;
 }
 
+@media screen and (max-width: 425px){
+    .swiper_spacing{
+        padding: 44px 29px !important;
+    }
+
+    /* .swiper_spacing >.swiper-button-prev{
+        left:0;
+    } */
+}
+
 .swiper_modify{
     width:75% !important;
     margin:auto !important;
@@ -17,6 +27,12 @@
 
 #next{
     position: absolute;
+}
+
+@media screen and (max-width: 365px){
+    #next{
+        top: 40%;
+    }
 }
 
 #next::after{

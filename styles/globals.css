@@ -63,6 +63,7 @@ img{
 .bullets>.swiper-pagination{
   margin-top:-35px;
   z-index:99;
+  display: block !important;
   position:relative !important;
 }
 
@@ -75,4 +76,24 @@ img{
 
 .bullets>.swiper-pagination-bullets>.swiper-pagination-bullet-active{
   background-color:#FD4A36 !important;
+}
+
+/* .bullets>.swiper-pagination>span:last-child{
+  display: block !important;
+} */
+
+.nav{
+  @apply p-3 xl:text-sm lg:text-xs text-white;
+}
+
+.header{
+  @apply py-3 text-center text-primary font-semibold hover:bg-white;
+}
+
+.footer-nav{
+  @apply sm:p-2 p-[5px] sm:text-sm text-[0.65rem];
+}
+
+.testimonial-sliders{
+  @apply flex flex-row-reverse gap-4 mt-7 items-center sm:justify-start justify-between;
 }

@@ -6,15 +6,21 @@ import PartnerSlider from '@/components/PartnerSlider';
 import Testimonial from '@/components/Testimonial';
 import Footer from '@/components/Footer';
 import MainSlider from '@/components/MainSlider';
+import { Fade, Zoom } from 'react-awesome-reveal';
 
 export default function Home() {
   return (
     <main>
-      <div className='absolute w-full z-30'>
-        <Navbar />
-      </div>
-
-      <MainSlider/>
+      
+        <div className='absolute w-full z-50'>
+          <Fade direction='down' triggerOnce='true'>
+            <Navbar />
+          </Fade>
+        </div>
+     
+        <Zoom triggerOnce='true'>
+          <MainSlider/>
+        </Zoom>
       {/* career section */}
       <CareerSlider />
       

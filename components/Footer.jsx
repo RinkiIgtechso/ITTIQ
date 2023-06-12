@@ -36,13 +36,13 @@ function Footer() {
                         <span className='bg-white sm:h-7 sm:w-7 h-6 w-6 rounded-full flex items-center justify-center'>
                         <Image src='/Images/call.svg' width='11' height='11' alt='contact' />
                         </span>
-                        <span className='md:text-xs lg:text-sm'><Link href="/">P+229-54335532</a></span>
+                        <span className='md:text-xs lg:text-sm'><Link href="/">P+229-54335532</Link></span>
                     </div>
                     <div className='flex lg:gap-4 md:gap-2 gap-3 items-center sm:justify-start justify-center'>
                         <span className='bg-white sm:h-7 sm:w-7 h-6 w-6 rounded-full flex items-center justify-center'>
                         <Image src='/Images/email.svg' width='13' height='13' alt='contact' />
                         </span>
-                        <span className='md:text-xs lg:text-sm'><Link href="/">info@email.com</a></span>
+                        <span className='md:text-xs lg:text-sm'><Link href="/">info@email.com</Link></span>
                     </div>
                     <div>
                     <p className='sm:text-right text-center sm:text-sm text-lg pb-1 font-semibold sm:mt-0 mt-4'>Subscribe</p>

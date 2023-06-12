@@ -57,21 +57,20 @@ function Footer() {
             <div className='lg:py-10 md:pb-7 pb-3'>
                 <div className='flex sm:flex-row flex-col justify-between sm:gap-0 gap-7 items-center'>
                     <div className='flex flex-wrap lg:gap-10 md:gap-6 gap-5 sm:justify-start justify-center lg:text-sm md:text-xs text-xs'>
-                        <div><a href="/">loremipsum© 2023. All Rights Reserved.</a></div>
-                        <div><a href="/">Privacy Policy</a></div>
-                        <div><a href="/">Terms & Condition</a> </div>
-                        <div><a href="/">Site Map</a></div>
+                        <div><Link href="/">loremipsum© 2023. All Rights Reserved.</Link></div>
+                        <div><Link href="/">PrivLinkcy Policy</Link></div>
+                        <div><Link href="/">Terms & Condition</Link> </div>
+                        <div><Link href="/">Site MLinkp</Link></div>
                     </div>
                     <div className='flex flex-row gap-4 lg:text-sm md:text-xs'>
                         <div className='bg-white lg:h-9 md:h-7 lg:w-9 md:w-7 h-5 w-5 rounded-full flex items-center justify-center'>
-                        <a href="/" className='sm:w-[15px] w-[6px] sm:h-[15px] h-[6px] '><Image src='/Images/facebook.svg' width='10' height='10' alt='social_icon' /></a>
+                        <Link href="/" className='sm:w-[15px] w-[6px] sm:h-[15px] h-[6px] '><Image src='/Images/facebook.svg' width='10' height='10' alt='social_icon' /></Link>
                         </div>
                         <div className='bg-white lg:h-9 md:h-7 lg:w-9 md:w-7 h-5 w-5 rounded-full flex items-center justify-center'>
-                        <a href="/" className='sm:w-[15px] w-[10px] sm:h-[15px] h-[10px] '><Image src='/Images/twitter.svg' width='15' height='15' alt='social_icon' /></a>
+                        <Link href="/" className='sm:w-[15px] w-[10px] sm:h-[15px] h-[10px] '><Image src='/Images/twitter.svg' width='15' height='15' alt='social_icon' /></Link>
                         </div>
                         <div className='bg-white lg:h-9 md:h-7 lg:w-9 md:w-7 h-5 w-5 rounded-full flex items-center justify-center'>
-                        <a href="/" className='sm:w-[15px] w-[9px] sm:h-[15px] h-[9px] '><Image src='/Images/instagram.svg' width='15' height='15' alt='social_icon' /></a>
-                        </div>
+                        Link                        </div>
                     </div>
                 </div>
             </div>

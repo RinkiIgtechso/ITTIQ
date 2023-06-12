@@ -49,7 +49,7 @@ function CareerSlider() {
     <div className='p-4'>
       <div className='mt-2 mb-3'>
       <div className='text-center sm:text-3xl text-[1.5rem] font-bold'>Choose  Your Career Path</div>
-        <div className='mt-2 text-center text-sm text-secondary-200 xl:w-75 md:w-96 m-auto'>Nous nous engageons à fournir une éducation technologique à la prochaine génération de leaders au Bénin, en promouvant l'égalité et l'autonomisation</div>
+        <div className='mt-2 text-center text-sm text-secondary-200 xl:w-75 md:w-96 m-auto'>Nous nous engageons à fournir une éducation technologique à la prochaine génération de leaders au Bénin, en promouvant l&apos;égalité et l&apos;autonomisation</div>
       </div>
       <div className='sm:mx-5 mx-0 py-4'>
 

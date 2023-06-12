@@ -25,8 +25,8 @@ function Testimonial() {
     <div >
         <div className={styles.student_section}>
             <div className=' pt-20 pb-12'>
-                <Zoom triggerOnce='true'><div className='text-center font-semibold sm:text-3xl text-2xl'>What Our Student's Say</div></Zoom>
-                <Zoom triggerOnce='true'><p className='mt-2 mb-8 text-center sm:w-[48%] w-[85%] m-auto text-sm text-secondary-200'>L'ITTIQ ne forme pas seulement des experts en technologie, mais également les futurs leaders de l'industrie technologique</p></Zoom>
+                <Zoom triggerOnce='true'><div className='text-center font-semibold sm:text-3xl text-2xl'>What Our Student&apos;s Say</div></Zoom>
+                <Zoom triggerOnce='true'><p className='mt-2 mb-8 text-center sm:w-[48%] w-[85%] m-auto text-sm text-secondary-200'>L&apos;ITTIQ ne forme pas seulement des experts en technologie, mais également les futurs leaders de l&apos;industrie technologique</p></Zoom>
 
                 <div className='sm:p-0 p-6'>
                     <Swiper
@@ -167,7 +167,7 @@ function Testimonial() {
                         <Zoom triggerOnce='true'><p className='text-sm font-bold text-primary'>High rated</p></Zoom>
                         <Zoom triggerOnce='true'><p className='xl:text-6xl lg:text-[2.8rem] md:text-[2.2rem] text-3xl font-semibold capitalize lg:w-4/5 md:w-[100%] lg:mt-2 md:mt-0 leading-0 lg:leading-[40px]'>student campus life</p></Zoom>
                         <Zoom triggerOnce='true'><p className='lg:text-lg md:text-sm text-xs font-semibold lg:mt-4 md:mt-0 mt-1'>BE AMBITIOUS. BE VULNERABLE. BE YOU</p></Zoom>
-                        <Zoom triggerOnce='true'><p className='text-secondary-200 sm:text-sm lg:pr-20 md:pr-0 sm:mt-4 mt-2'>In addition to its training programs, ITTIQ offers a rich and varied social experience and other support systems where you’ll find outlets for creative expression and be your true self.</p></Zoom>
+                        <Zoom triggerOnce='true'><p className='text-secondary-200 sm:text-sm lg:pr-20 md:pr-0 sm:mt-4 mt-2'>In addition to its training programs, ITTIQ offers a rich and varied social experience and other support systems where you&apos;ll find outlets for creative expression and be your true self.</p></Zoom>
                         <div className='grid grid-cols-2 gap-5 mt-10 '>
                             <Slide direction='up' triggerOnce='true'>
                             <div className='bg-primary  text-gray-100 py-2 lg:px-10 md:px-4 text-center font-semibold rounded-xl cursor-pointer'>How we work</div>

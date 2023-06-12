@@ -47,7 +47,7 @@ function MainSlider() {
                   <div className='lg:w-2/5 md:w-[85%] w-[100%] sm:m-auto mt-2'>
                     <Zoom triggerOnce='true'><p className='sm:text-sm text-xs sm:leading-7 leading-[20px]'>
                       Nous nous engageons à fournir une éducation technologique à la prochaine <br className='lg:hidden xl:block hidden'/> génération <br className='lg:hidden xl:block hidden'/>
-                      de leaders au Bénin, en promouvant l'égalité et l'autonomisation.
+                      de leaders au Bénin, en promouvant l&apos;égalité et l&apos;autonomisation.
                     </p></Zoom>
                   </div>
                   <div className='flex justify-center sm:gap-6 gap-3 mt-6 mb-8'>

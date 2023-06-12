@@ -26,23 +26,23 @@ function Footer() {
             <div className='py-12'>
                 <div className='grid sm:grid-cols-4 grid-cols-1 justify-between items-center sm:gap-1 gap-4'>
                     <div className='lg:text-sm md:text-xs sm:text-left text-center'>
-                        <p><a href="/">Canada</a></p>
-                        <p><a href="/">Chemin D’aigremont</a></p>
-                        <p><a href="/">Lorraine Quebec</a></p>
-                        <p><a href="/">Republic Of Benin - Lot 29</a></p>
-                        <p><a href="/">PK Cotonou</a></p>
+                        <p><Link href="/">Canada</Link></p>
+                        <p><Link href="/">Chemin D’aigremont</Link></p>
+                        <p><Link href="/">Lorraine Quebec</Link></p>
+                        <p><Link href="/">Republic Of Benin - Lot 29</Link></p>
+                        <p><Link href="/">PK Cotonou</Link></p>
                     </div>
                     <div className='flex lg:gap-4 md:gap-2 gap-3 items-center sm:justify-start justify-center'>
                         <span className='bg-white sm:h-7 sm:w-7 h-6 w-6 rounded-full flex items-center justify-center'>
                         <Image src='/Images/call.svg' width='11' height='11' alt='contact' />
                         </span>
-                        <span className='md:text-xs lg:text-sm'><a href="/">P+229-54335532</a></span>
+                        <span className='md:text-xs lg:text-sm'><Link href="/">P+229-54335532</a></span>
                     </div>
                     <div className='flex lg:gap-4 md:gap-2 gap-3 items-center sm:justify-start justify-center'>
                         <span className='bg-white sm:h-7 sm:w-7 h-6 w-6 rounded-full flex items-center justify-center'>
                         <Image src='/Images/email.svg' width='13' height='13' alt='contact' />
                         </span>
-                        <span className='md:text-xs lg:text-sm'><a href="/">info@email.com</a></span>
+                        <span className='md:text-xs lg:text-sm'><Link href="/">info@email.com</a></span>
                     </div>
                     <div>
                     <p className='sm:text-right text-center sm:text-sm text-lg pb-1 font-semibold sm:mt-0 mt-4'>Subscribe</p>

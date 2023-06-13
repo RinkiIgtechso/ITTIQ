@@ -6,7 +6,7 @@ import { Fade } from 'react-awesome-reveal';
 function Footer() {
   return (
     <div className='text-white bg-black'>
-      <Fade directon='up'>
+      <Fade >
       <div className='xl:w-[76%] md:w-[85%] w-[93%] m-auto'>
             <div className='flex justify-between items-center py-5'>
                 <div>

@@ -35,7 +35,7 @@ function MainSlider() {
       >
         {[1,2,3,4].map((item,i)=>
           <SwiperSlide key={i}>
-              <div class="bg-[url('/Images/bg_image.svg')] text-gray-300 bg-no-repeat bg-cover bg-center">
+              <div className="bg-[url('/Images/bg_image.svg')] text-gray-300 bg-no-repeat bg-cover bg-center">
                 
                 <div className='text-center pt-32 pb-20'>
                   <div className="bg-[url('/Images/iconsGroup.svg')] bg-no-repeat bg-contain bg-center sm:w-3/4 w-4/5 m-auto">

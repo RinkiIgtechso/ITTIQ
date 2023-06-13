@@ -46,7 +46,7 @@ function Footer() {
                     </div>
                     <div>
                     <p className='sm:text-right text-center sm:text-sm text-lg pb-1 font-semibold sm:mt-0 mt-4'>Subscribe</p>
-                        <div className='w-[100%] bg-white rounded-3xl p-[3px] sm:h-[39.5px] h-[47px]'> 
+                        <div className='w-[100%] bg-white rounded-3xl p-[3px] sm:h-[40.5px] h-[47px]'> 
                             <div className='bg-primary  float-right rounded-3xl text-white font-semibold text-center lg:text-sm md:text-xs py-2 px-4 cursor-pointer'>
                                 Subscribe
                             </div>
@@ -70,7 +70,8 @@ function Footer() {
                         <Link href="/" className='sm:w-[15px] w-[10px] sm:h-[15px] h-[10px] '><Image src='/Images/twitter.svg' width='15' height='15' alt='social_icon' /></Link>
                         </div>
                         <div className='bg-white lg:h-9 md:h-7 lg:w-9 md:w-7 h-5 w-5 rounded-full flex items-center justify-center'>
-                        Link                        </div>
+                        <Link href="/" className='sm:w-[15px] w-[10px] sm:h-[15px] h-[10px] '><Image src='/Images/instagram.svg' width='15' height='15' alt='social_icon' /></Link>
+                        </div>
                     </div>
                 </div>
             </div>

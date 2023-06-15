@@ -33,16 +33,16 @@ function Footer() {
                         <p><Link href="/">PK Cotonou</Link></p>
                     </div>
                     <div className='flex lg:gap-4 md:gap-2 gap-3 items-center sm:justify-start justify-center'>
-                        <span className='bg-white sm:h-7 sm:w-7 h-6 w-6 rounded-full flex items-center justify-center'>
+                        <div className='bg-white sm:h-7 sm:w-7 h-6 w-6 rounded-full flex items-center justify-center'>
                         <Image src='/Images/call.svg' width='11' height='11' alt='contact' />
-                        </span>
-                        <span className='md:text-xs lg:text-sm'><Link href="/">P+229-54335532</Link></span>
+                        </div>
+                        <div className='md:text-xs lg:text-sm'><Link href="/">P+229-54335532</Link></div>
                     </div>
                     <div className='flex lg:gap-4 md:gap-2 gap-3 items-center sm:justify-start justify-center'>
-                        <span className='bg-white sm:h-7 sm:w-7 h-6 w-6 rounded-full flex items-center justify-center'>
+                        <div className='bg-white sm:h-7 sm:w-7 h-6 w-6 rounded-full flex items-center justify-center'>
                         <Image src='/Images/email.svg' width='13' height='13' alt='contact' />
-                        </span>
-                        <span className='md:text-xs lg:text-sm'><Link href="/">info@email.com</Link></span>
+                        </div>
+                        <div className='md:text-xs lg:text-sm'><Link href="/">info@email.com</Link></div>
                     </div>
                     <div>
                     <p className='sm:text-right text-center sm:text-sm text-lg pb-1 font-semibold sm:mt-0 mt-4'>Subscribe</p>
@@ -64,13 +64,16 @@ function Footer() {
                     </div>
                     <div className='flex flex-row gap-4 lg:text-sm md:text-xs'>
                         <div className='bg-white lg:h-9 md:h-7 lg:w-9 md:w-7 h-5 w-5 rounded-full flex items-center justify-center'>
-                        <Link href="/" className='sm:w-[15px] w-[6px] sm:h-[15px] h-[6px] '><Image src='/Images/facebook.svg' width='10' height='10' alt='social_icon' /></Link>
+                            <Link href="/"><Image src='/Images/facebook.svg' width='0' height='0' alt='social_icon' sizes="100vw"
+                            className="w-full h-auto" /></Link>
                         </div>
                         <div className='bg-white lg:h-9 md:h-7 lg:w-9 md:w-7 h-5 w-5 rounded-full flex items-center justify-center'>
-                        <Link href="/" className='sm:w-[15px] w-[10px] sm:h-[15px] h-[10px] '><Image src='/Images/twitter.svg' width='15' height='15' alt='social_icon' /></Link>
+                            <Link href="/"><Image src='/Images/twitter.svg' width='0' height='0'sizes="100vw"
+                            className="w-full h-auto" alt='social_icon' /></Link>
                         </div>
                         <div className='bg-white lg:h-9 md:h-7 lg:w-9 md:w-7 h-5 w-5 rounded-full flex items-center justify-center'>
-                        <Link href="/" className='sm:w-[15px] w-[10px] sm:h-[15px] h-[10px] '><Image src='/Images/instagram.svg' width='15' height='15' alt='social_icon' /></Link>
+                            <Link href="/"><Image src='/Images/instagram.svg' width='0' height='0' alt='social_icon' sizes="100vw"
+                            className="w-full h-auto" /></Link>
                         </div>
                     </div>
                 </div>

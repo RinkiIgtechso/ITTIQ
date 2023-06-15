@@ -6,7 +6,6 @@ import { Fade, Zoom } from 'react-awesome-reveal';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
-import "swiper/css/effect-fade";
 import "swiper/css/scrollbar";
 import 'swiper/css/keyboard';
 
@@ -16,7 +15,6 @@ function MainSlider() {
       <div>
       <Swiper
         dir='ltr'
-        // effect={"fade"}
         modules={[Autoplay, Keyboard,Pagination,Scrollbar]}
         autoplay={{
           delay: 4000,

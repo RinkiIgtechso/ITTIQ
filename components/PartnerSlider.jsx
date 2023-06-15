@@ -45,35 +45,40 @@ function PartnerSlider() {
                     <SwiperSlide>
                         
                             <div className='h-24 pt-5'>
-                                <Image src='/Images/client_4.svg' width='100' height='100' alt='testimonial'/>
+                                <Image src='/Images/client_4.svg' width='0' height='0' alt='testimonial' sizes="50vw"
+                            className="w-auto h-auto"/>
                             </div>
                         
                     </SwiperSlide>
                     <SwiperSlide>
                         
                             <div className='h-24'>
-                                <Image src='/Images/client_2.svg' width='100' height='100' alt='testimonial'/>
+                                <Image src='/Images/client_2.svg' width='0' height='0' alt='testimonial' sizes="50vw"
+                            className="w-auto h-auto"/>
                             </div>
                         
                     </SwiperSlide>
                     <SwiperSlide>
                        
                             <div className='h-24'>
-                                <Image src='/Images/client_1.svg' width='100' height='100' alt='testimonial'/>
+                                <Image src='/Images/client_1.svg' width='0' height='0' alt='testimonial' sizes="50vw"
+                            className="w-auto h-auto"/>
                             </div>
                        
                     </SwiperSlide>
                     <SwiperSlide>
                         
                             <div className='h-24'>
-                                <Image src='/Images/client_3.svg' width='100' height='100' alt='testimonial'/>
+                                <Image src='/Images/client_3.svg' width='0' height='0' alt='testimonial' sizes="50vw"
+                            className="w-auto h-auto"/>
                             </div>
                         
                     </SwiperSlide>
                     <SwiperSlide>
                         
                             <div className='h-24'>
-                                <Image src='/Images/client_2.svg' width='100' height='100' alt='testimonial'/>
+                                <Image src='/Images/client_2.svg' width='0' height='0' alt='testimonial' sizes="50vw"
+                            className="w-auto h-auto"/>
                             </div>
                         
                     </SwiperSlide>

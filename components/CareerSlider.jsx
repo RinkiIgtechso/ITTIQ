@@ -112,21 +112,21 @@ function CareerSlider() {
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="xl:w-4 xl:h-4 lg:w-3 lg:h-3 w-3 h-3 text-gray-600">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
-                                    <span className='xl:text-xs lg:text-[0.5rem] text-[0.6rem] text-gray-400'>22hr 30min</span>
+                                    <div className='xl:text-xs lg:text-[0.5rem] text-[0.6rem] text-gray-400'>22hr 30min</div>
                                 </div>
 
                                 <div className='flex gap-1'>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="xl:w-4 xl:h-4 lg:w-3 lg:h-3 w-3 h-3text-gray-600">
                                     <path strokeLinecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
                                     </svg>
-                                    <span className='xl:text-xs lg:text-[0.5rem] text-[0.6rem] text-gray-400'>34 Courses</span>
+                                    <div className='xl:text-xs lg:text-[0.5rem] text-[0.6rem] text-gray-400'>34 Courses</div>
                                 </div>
 
                                 <div className='flex gap-1'>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="xl:w-4 xl:h-4 lg:w-3 lg:h-3 w-3 h-3text-gray-600">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                                     </svg>
-                                    <span className='xl:text-xs lg:text-[0.5rem] text-[0.6rem] text-gray-400'>250 Sales</span>
+                                    <div className='xl:text-xs lg:text-[0.5rem] text-[0.6rem] text-gray-400'>250 Sales</div>
                                 </div>
                             </div>
                             <div className='p-2'>

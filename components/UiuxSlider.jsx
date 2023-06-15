@@ -45,18 +45,19 @@ function UiuxSlider() {
                 <p className='text-secondary-100 sm:text-sm text-xs font-semibold pt-2'>for today and the future</p>
             </div>
             <div className='sm:pt-5 pt-0'>
-                <p className='md:text-[13.5px] sm:text-xs text-[0.55rem]'>Our team of experts brings a wealth of experience and knowledge to every client engagement, ensuring that we understand your unique needs and challenges. We work with you to develop customized talent solutions that align with your business strategy, culture, and goals...<span className='text-primary cursor-pointer'>Read More</span></p>
+                <p className='md:text-[13.5px] sm:text-xs text-[0.55rem]'>Our team of experts brings a wealth of experience and knowledge to every client engagement, ensuring that we understand your unique needs and challenges. We work with you to develop customized talent solutions that align with your business strategy, culture, and goals...<span className='text-primary cursor-pointer'>Read More</span>
+                </p>
             </div>
         </div>
 
         <div className='relative sm:-top-44 -top-52'>
             <div className='flex justify-between px-3 text-primary relative sm:top-24 top-32'>
-                <span onClick={() => swiperRef.current?.slidePrev()}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 review-swiper-button-next cursor-pointer">
+                <div onClick={() => swiperRef.current?.slidePrev()}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 review-swiper-button-next cursor-pointer">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg></span>
-                <span onClick={() => swiperRef.current?.slideNext()}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 review-swiper-button-next cursor-pointer">
+                </svg></div>
+                <div onClick={() => swiperRef.current?.slideNext()}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 review-swiper-button-next cursor-pointer">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg></span>
+                </svg></div>
                 
             </div>
             <Swiper
